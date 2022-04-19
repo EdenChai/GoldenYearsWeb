@@ -1,7 +1,67 @@
-#menu
-{
+#menu {
 	position: fixed;
 	width: 100%;
-	height: 35px;
-	background: white;
+	height: 65px;
+	background-color: none;
+	text-align: center;
+}
+
+li a {
+	display: block;
+	color: rgb(23, 21, 21);
+	padding: 20px;
+	text-decoration: solid;
+}
+
+li {
+	display: inline-flex;
+}
+
+li a:hover {
+	background-color: #c4b7a6;
+	border-radius: 5%;
+}
+
+body {
+	background-color: #e6e2d3;
+}
+
+h1 {
+	text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff,	1px 1px 0 #fff, 1px 1px 10px #141414;
+	color: #333;
+
+	text-align: center;
+	font-family: cursive;
+	font-size: 32px;
+}
+
+h1:before,
+h1:after {
+	background-color: #c4b7a6;
+	content: '';
+	display: inline-block;
+	height: 2px;
+	position: relative;
+	vertical-align: middle;
+	width: 40%;
+	padding: 2px;
+}
+
+h1:before {
+	right: 1em;
+	margin-left: -50%;
+}
+
+h1:after {
+	left: 0.5em;
+	margin-right: -50%;
+}
+
+#about-me
+{
+	font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	text-align: right;
+	margin-right: 80px;
+	margin-left: 80px;
+	font-size: large;
 }
