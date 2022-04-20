@@ -1,39 +1,42 @@
 /* @import url('https://fonts.googleapis.com/css?family=Inconsolata|Lato:300,400,700'); */
+
+
+/* ----- Navigation bar ----- */
 #menu {
 	width: 100%;
-	background-color:  none;
+	height: 30px;
+	background-color: #c4b7a6ad;
 	position: fixed;
-	margin-top: 15px;
+	padding-top: 10px;
 }
 
 #menu a {
 	float: left;
 	color: white;
 	display: inline-flexbox;
-	text-decoration: solid;
-	font-size: 16px;
+	text-decoration: none;
+	font-size: 18px;
 	width: 12%;
 	text-align: center;
 	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 #menu a:hover {
-	background-color: #c4b7a6;
-	border-radius: 100%;
-	/* border-style: groove; */
+	background-color: #c4b7a6d9;
+	/* padding: 4px; */
 }
 
-.center-fit {
+.cover-picture {
 	width: 100%;
 	max-height: 100vh;
-	margin: auto;
+	/* margin-top: 30px; */
   }
 
 body {
 	background-color: #e6e2d3;
 }
 
-h1 
+h1
 {
 	text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff,	1px 1px 0 #fff, 1px 1px 10px #141414;
 	color: #333;
@@ -45,15 +48,14 @@ h1
 
 h1:before, h1:after 
 {
-	background-color: #c4b7a6;
+	background-color: #c4b7a642;
 	content: '';
 	display: inline-block;
 	height: 2px;
 	position: relative;
 	vertical-align: middle;
 	width: 50%;
-	padding: 5px;
-
+	/* padding: 5px; */
 }
 
 h1:before {
@@ -66,7 +68,7 @@ h1:after {
 	margin-right: -50%;
 }
 
-#about-me
+#about-me, #playlist-description
 {
 	font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 	text-align: right;
@@ -74,3 +76,43 @@ h1:after {
 	margin-left: 80px;
 	font-size: large;
 }
+
+.container {
+	display: flex;
+	width: 100%;
+	padding: 4% 2%;
+	box-sizing: border-box;
+	height: 90vh;
+  }
+  
+  .box {
+	flex: 1;
+	overflow: hidden;
+	transition: .5s;
+	margin: 0 0.5%;
+	box-shadow: 0 20px 30px rgba(0,0,0,.1);
+	line-height: 0;
+  }
+  
+  .box > img {
+	width: 200%;
+	height: calc(100% - 10vh);
+	object-fit: cover; 
+	transition: 0.5s;
+  }
+  
+  .box > span {
+	font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-size: 3vh;
+	display: block;
+	text-align: center;
+	height: 50vh;
+	line-height: 2.6;
+  }
+  
+  .box:hover { flex: 1 1 50%; }
+  .box:hover > img {
+	width: 100%;
+	height: 100%;
+  }
+   
