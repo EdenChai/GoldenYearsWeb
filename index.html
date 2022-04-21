@@ -5,13 +5,10 @@
   <title>My Website</title>
   <link rel="stylesheet" type="text/css" href="style.css" />
   <script src="https://kit.fontawesome.com/177289bc79.js" crossorigin="anonymous"></script>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-    }
-  </style>
 </head>
+
+
+<!-- ======================================== Navigation bar ========================================  !-->
 
 <body>
   <div id="menu">
@@ -23,15 +20,21 @@
     <a href="#like"><i class="fa-brands fa-facebook-square"></i> LIKE</a>
     <a href="#qrcoder"><i class="fa-solid fa-barcode"></i> QR CODE</a>
     <a href="#spa"><i class="fa-solid fa-circle-question"></i></i> Q & A</a>
-    <a href="#contact"><i class="fa-solid fa-envelope"></i> CONTACT</a>
+    <a href="#contact"><i class="fa-solid fa-envelope"></i> CONTACT US</a>
     </b>
   </div>
 
+
+<!-- ======================================== HOME section ========================================  !-->
+
   <section id="home" class="home_class">
       <picture>
-        <img class="cover-picture" src="images/cover.jpg">
+        <img class="cover-picture" src="images/cover_2.jpg">
       </picture>
   </section>
+
+
+<!-- ======================================== ABOUT section ========================================  !-->
 
   <section id="about" class="section">
     <br />
@@ -39,7 +42,7 @@
     <h1><b>About Me</b></h1>
     <br />
     <br />
-    <div id="about-me">
+    <div id="about-description">
       <p dir="rtl">
         זאב רווח הוא שחקן קולנוע, טלוויזיה ותיאטרון, קומיקאי, זמר, מפיק, תסריטאי ובמאי קולנוע ישראלי. זוכה שלושה פרסי אופיר - שניים כשחקן הראשי הטוב ביותר ואחד על מפעל חיים. נמנה בין האישים הבולטים והחשובים בקולנוע הישראלי.
         <br />
@@ -51,6 +54,9 @@
       </p>
     </div>
   </section>
+
+
+<!-- ======================================== PHOTOS section ========================================  !-->
 
   <section id="photos" class="section">
     <br />
@@ -84,6 +90,9 @@
     </div>
   </section>
 
+
+<!-- ======================================== PLAYLIST section ========================================  !-->
+
   <section id="playlist" class="section">
     <br />
     <br />
@@ -91,7 +100,6 @@
     <br />
     <br />
     <div id="playlist-description">
-
     <center>
     <p dir="rtl">
       בשנת 2021 השתתף רווח בקליפ של הזמר אייל גולן "ימים טובים".
@@ -104,8 +112,10 @@
     <center>
       <iframe width="560" height="315" src="https://www.youtube.com/embed/b5W7TBcnJq4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </center>
-
   </section>
+
+
+<!-- ======================================== LIKE section ========================================  !-->
 
   <section id="like" class="section">
     <br />
@@ -113,8 +123,14 @@
     <h1>Give Me a Like</h1>
     <br />
     <br />
-    <br />
+  <center>
+    <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2F%25D7%2596%25D7%2590%25D7%2591-%25D7%25A8%25D7%2595%25D7%2595%25D7%2597-Zeev-Revach-569503286475875%2F&width=450&layout=standard&action=like&size=large&share=true&height=35&appId"
+    width="450" height="35" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+  </center>
   </section>
+
+
+<!-- ======================================== QR-CODE section ========================================  !-->
 
   <section id="qrcoder" class="section">
     <br />
@@ -126,22 +142,110 @@
       <img src="images/QR.png" width="250" height="250">
     </center>
     <br/>
-
   </section>
+
+
+<!-- ======================================== Q & A section ========================================  !-->
 
   <section id="spa" class="section">
     <br />
     <br />
-    <h1>Answers</h1>
+    <h1>Questions & Answers</h1>
     <br />
     <br />
-    <br />
+      <div class="aboutsAndSpaContainer">
+        <h2>
+          Question 1 - Main Differences between Web 1.0, Web 2.0 and Web 3.0
+        </h2>
+        <br />
+        <div id="ansContainer">
+          <div class="Q1">
+            <h2>WEB 1.0</h2>
+            <br/>
+            <p>
+              <i class="fab fa-internet-explorer"></i>  The "read-only" web
+              <br />
+              <br />
+              <i class="fas fa-globe"></i>  Millions of users
+              <br />
+              <br />
+              <i class="fab fa-chrome"></i>  Connect information - The Web
+              <br />
+              <br />
+              <i class="fas fa-globe-americas"></i>  Static connect - one way interaction
+            </p>
+          </div>
+          <div class="Q1">
+            <h2>WEB 2.0</h2>
+            <br/>
+            <p>
+              <i class="fab fa-internet-explorer"></i>  The "read-write" web
+              <br />
+              <br />
+              <i class="fas fa-globe"></i>  Billions of users
+              <br />
+              <br />
+              <i class="fab fa-chrome"></i>  Connect people - Social Web (Blogging, Facebook, Twiter)
+              <br />
+              <br />
+              <i class="fas fa-globe-americas"></i>  Two way communication & collaborative approach (Media sharing Wikipedia, StackOverFlow, Youtube)
+            </p>
+          </div>
+          <div class="Q1">
+            <h2>WEB 3.0</h2>
+            <br/>
+            <p>
+              <i class="fab fa-internet-explorer"></i>  The "read-write-execute" web
+              <br />
+              <br />
+              <i class="fas fa-globe"></i>  Trillions of users
+              <br />
+              <br />
+              <i class="fab fa-chrome"></i>  Connect knowledge - Web of DATA, Semantic web
+              <br />
+              <br />
+              <i class="fas fa-globe-americas"></i>  Personalaized experience - using AI tools the web learns the user and provides him relevant informatiom and reccomendations
+            </p>
+          </div>
+        </div>
+        <br/>
+        <br/>
+        
+        <h2>Question 2 - Query Search Use Case:  "Ben Gurion University"</h2>
+        <br/>
+        <div id="ansContainer">
+          <div class="Q2">
+            <h2>WEB 1.0</h2>
+            <br/>
+            <p>
+              User writes a specific URL and gets a website
+            </p>
+          </div>
+          <div class="Q2">
+            <h2>WEB 2.0</h2>
+            <br/>
+            <p>
+              User writes "Ben Gurion University" as a query in a search engine and gets relevant results
+            </p>
+          </div>
+          <div class="Q2">
+            <h2>WEB 3.0</h2>
+            <br/>
+            <p>
+              User writes "Ben Gurion University" as a query in a search engine and gets more precise relevant results because of the automatic tagging
+            </p>
+          </div>
+        </div>
+      </div>
   </section>
+
+
+<!-- ======================================== CONTACT-US section ========================================  !-->
 
   <section id="contact" class="section">
     <br />
     <br />
-    <h1>Contact Me</h1>
+    <h1>Contact Us</h1>
     <br />
     <br />
     <br />
