@@ -4,9 +4,22 @@
 <head>
   <title>זאב רווח</title>
   <link rel="stylesheet" type="text/css" href="style.css" />
-  <!-- <link href='http://serve.fontsproject.com/css?family=Journal+CLM:100' rel='stylesheet' type='text/css'> -->
+  <link rel="shortcut icon" type="image/x-icon" href="images/icon.jpg" />
   <script src="https://kit.fontawesome.com/177289bc79.js" crossorigin="anonymous"></script>
 
+  <!-- emoji -->
+  <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+  <script>
+    tinymce.init({
+      selector: ".message",
+      plugins: "emoticons",
+      toolbar: "emoticons",
+      toolbar_location: "bottom",
+      menubar: false
+    });
+    </script>
+  <!-- /emoji -->
+  
 </head>
 
 
@@ -25,8 +38,8 @@
       <a href="#contact"><i class="fa-solid fa-envelope"></i> CONTACT US</a>
     </b>
   </div>
-
-
+  
+  
   <!-- ======================================== HOME section ========================================  !-->
 
   <section id="home" class="home_class">
@@ -37,7 +50,7 @@
 
 
   <!-- ======================================== ABOUT section ========================================  !-->
-
+  
   <section id="about" class="section">
     <br />
     <br />
@@ -94,9 +107,9 @@
     </div>
   </section>
 
-
+  
   <!-- ======================================== PLAYLIST section ========================================  !-->
-
+  
   <section id="playlist" class="section">
     <br />
     <br />
@@ -114,15 +127,15 @@
     </div>
     <br />
     <center>
-      <iframe width="700" height="400" src="https://www.youtube.com/embed/b5W7TBcnJq4" title="YouTube video player"
-        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      <iframe class="video" src="https://www.youtube.com/embed/b5W7TBcnJq4" title="YouTube video player" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen></iframe>
     </center>
   </section>
-
-
+  
+  
   <!-- ======================================== LIKE section ========================================  !-->
-
+  
   <section id="like" class="section">
     <br />
     <br />
@@ -131,12 +144,9 @@
     <br />
     <h2>If you love this site please click on the like button and share with your friends</h2>
     <br />
+    <br />
     <center>
-      <iframe
-        src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fdevelopers.facebhttps%3A%2F%2Fweb-development-environments-2022.github.io%2F206259848%2Fook.com%2Fdocs%2Fplugins%2F&width=174&layout=button_count&action=like&size=large&share=true&height=46&appId"
-        width="174" height="46" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
-        allowfullscreen="true"
-        allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+      <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fweb-development-environments-2022.github.io%2F206259848%2F&width=174&layout=button_count&action=like&size=large&share=true&height=46&appId" width="174" height="46" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
     </center>
   </section>
 
@@ -259,28 +269,35 @@
     <h2>We'd love to hear from you!</h2>
 
     <div class="contactContainer">
-      <center>
-        <form action="mailto:edench@post.bgu.ac.il" method="post" enctype="text/plain">
-
-          <i class="fa-solid fa-user-large""></i> 
-          <input type="text" name="name" placeholder="Your Name *"><br>
-
-            <i class="fa-solid fa-envelope"></i>
-            <input type="email" name="mail" placeholder="Your Mail *"><br>
-
-            <i class="fa-solid fa-phone"></i>
-            <input type="tel" name="phone" placeholder="Your Phone (Optional)"><br>
-
-            <i class="fa-solid fa-pen"></i>
-            <input type="text" name="message" placeholder="This is the place to express your opinion" size="100"><br>
-
-            <input type="submit" value="Send">
-            <input type="reset" value="Reset">
+      <form action="https://formspree.io/f/mgedpeye" method="post">
+        
+        <label>
+          <i class="fa-solid fa-user-large"></i> Name<br>
+          <input class="name" type="text" name="name" placeholder="Your Name *" required></br>
+        </label>
+        
+        <label>
+          <i class="fa-solid fa-envelope"></i> Mail<br>
+          <input class="mail" type="email" name="mail" placeholder="Your Mail *" required></br>
+        </label>
+        
+        <label>
+            <i class="fa-solid fa-phone"></i> Phone number<br>
+            <input class="phone" type="tel" name="phone" placeholder="Your Phone (Optional)"></br>
+          </label>
+          
+          <label>
+            <i class="fa-solid fa-pen"></i> Message<br>
+            <input class="message" type=""text" name="message" placeholder="This is the place to express your opinion"></br>
+          </label>
+          
+          <center>
+          <button class="submit" type="submit">SEND MESSAGE <i class="fa-solid fa-paper-plane"></i></button>
+          <button class="reset" type="reset">RESET</button>
+        </center>
         </form>
-      </center>
     </div>
   </section>
-
 
   <!-- ======================================== BOTTOM section ========================================  !-->
 
@@ -291,7 +308,7 @@
   </section>
 
 
-  <!-- ======================================== BOTTOM section ========================================  !-->
+  <!-- ======================================== SCRIPT section ========================================  !-->
 
   <script type="text/javascript">
     $(function () {
@@ -306,7 +323,6 @@
       $('#menu').toggle($(this).scrollTop() > 1000)
     });
   </script>
-
 
 </body>
 

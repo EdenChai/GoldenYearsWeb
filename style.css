@@ -32,7 +32,7 @@ body
 	text-decoration: none;
 	text-align: center;
 	padding-top: 5px;
-	font-size: 19px;
+	font-size: 17px;
 	color: white;
 	float: left;
 	width: 12%;
@@ -102,7 +102,7 @@ h1:after
 	margin-left: 80px;
 	text-align: right;
 	font-size: 24px;
-	font-weight: 800;
+	font-weight: 600;
 }
 
 
@@ -143,6 +143,14 @@ h1:after
 }
 
 
+/* ========== Playlist section ========== */
+
+.video
+{
+	width: 70%;
+	height: 400px;
+}
+
 /* ========== Q & A section ========== */
 
 .ansContainer {
@@ -178,27 +186,24 @@ h2 {
 {
 	border-radius: 5px;
 	padding: 20px;
+	width: 50%;
+	margin: 0 auto;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-input[type=text], input[type=tel], input[type=email], select, textarea 
+.name, .mail, .phone, .message
 {
 	box-sizing: border-box;
-	width: 50%;
+	width: 100%;
 	padding: 12px;
 	border: 1px solid rgba(204, 204, 204, 0.925);
 	border-radius: 4px;
-	box-sizing: border-box;
+	/* box-sizing: border-box; */
 	margin-top: 10px;
 	margin-bottom: 10px;
-	resize: vertical;
 }
 
-input[name="message"]
-{
-	padding-bottom: 10%;
-}
-
-input[type=submit], input[type=reset] 
+.submit, .reset
 {
 	background-color: #04aa6dbb;
 	color: white;
@@ -209,11 +214,10 @@ input[type=submit], input[type=reset]
 	border-radius: 7px;
 	cursor: pointer;
 	margin-top: 5px;
-	margin-bottom: 15px;
+	margin-bottom: 120px;
 }
 
-
-input[type=submit]:hover, input[type=reset]:hover
+.submit:hover, .reset:hover
 {
 	background-color: #04aa6d;
 }
