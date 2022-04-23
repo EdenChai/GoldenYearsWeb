@@ -20,5 +20,5 @@ You can [click here](https://web-development-environments-2022.github.io/2062598
 ℹ️ Using diverse design elements - Hover transition (transforms), Icons, Emoji, Backgrounds Images.<br/>
 ℹ️ Adding media - designed photos, Youtube.<br/>
 ℹ️ Fixed menu with hover effects.<br/>
-ℹ️ QR-code for my web
+ℹ️ QR-code for my web<br/>
 ℹ️ Form to contact us
