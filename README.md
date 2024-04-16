@@ -12,7 +12,7 @@ edench
 206259848
 
 ## Link to my website
-You can [click here](https://edenchai.github.io/goldenyearsweb/) to see my website.
+You can [click here](https://edenchai.github.io/GoldenYearsWeb/) to see my website.
 
 ## Information
 ℹ️ The website was built in HTML5 and CSS3.<br/>
